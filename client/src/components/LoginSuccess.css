@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #f0f8ff;
+    background-color: linear-gradient(to right, #e0eafc, #cfdef3);
 }
 
 .success-card {
@@ -27,7 +27,7 @@
 
 .success-card button {
     padding: 10px 20px;
-    background-color: #dc3545;
+    background-color: #0aaa52;
     border: none;
     border-radius: 5px;
     color: white;
@@ -35,5 +35,5 @@
 }
 
 .success-card button:hover {
-    background-color: #c82333;
+    background-color: rgb(11, 140, 50)
 }

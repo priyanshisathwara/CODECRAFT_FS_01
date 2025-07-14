@@ -6,7 +6,7 @@
     align-items: center;
     justify-content: center;
     padding-left: 50px;
-    background-color: #f3eded;
+    background-color: linear-gradient(to right, #e0eafc, #cfdef3);
     font-family: 'Poppins', sans-serif;
 }
 
@@ -33,7 +33,7 @@
 }
 
 .form-group input {
-    width: 94%;
+  width: 89% !important;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -50,10 +50,11 @@
 .forgot-password {
     display: block;
     text-align: right;
-    color: rgb(21, 120, 150);
+    color:  #4A90E2;
     text-decoration: none;
     font-size: 14px;
     margin-bottom: 10px;
+    margin-right: 21px;
 }
 
 .forgot-password:hover {
@@ -63,9 +64,9 @@
 /* Buttons */
 .login-btn {
     display: block;
-    width: 100%;
+    width: 94%;
     padding: 10px 20px;
-    background: rgb(21, 120, 150);
+    background:  #4A90E2;
     color: #fefefe;
     font-size: 16px;
     font-weight: bold;
@@ -76,13 +77,13 @@
 }
 
 .login-btn:hover {
-    background: rgba(21, 120, 150, 0.763);
+    background: #357ABD;
 }
 
 .register-btn-in-login {
     display: block;
-    width: 94%;
-    background: rgb(21, 120, 150);
+    width: 89%;
+    background:#4A90E2;
     color: #fefefe;
     padding: 12px;
     border: 1px solid #ccc;
@@ -95,5 +96,6 @@
 }
 
 .register-btn-in-login:hover {
-    background: rgba(21, 120, 150, 0.763);
+    background: #357ABD;
+    transform: scale(1.05);
 }

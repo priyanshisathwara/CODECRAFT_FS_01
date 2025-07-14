@@ -27,8 +27,9 @@ function App() {
           <Route path='/reset-password-form' element={<ResetPassword />} />
           <Route path="/success" element={<RegistrationSuccess />} />
            <Route path="/login-success" element={<LoginSuccess />} />
-           <Route path="/profile" element={<Profile />} />
-
+          <Route path='/profile' element={<Profile />} />
+          
+          
 
 
 

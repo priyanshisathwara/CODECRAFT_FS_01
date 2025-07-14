@@ -6,7 +6,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f3eded;
+    background-color: linear-gradient(to right, #e0eafc, #cfdef3);
 
 }
 
@@ -57,21 +57,21 @@
 }
 
 .otpBtn {
-    background: rgb(21, 120, 150);
+    background:  #4A90E2;
     color: white;
 }
 
 .otpBtn:hover {
-    background: rgba(21, 120, 150, 0.763);
+    background: #357ABD;
 }
 
 .otpResendBtn {
-    background: rgb(21, 120, 150);
+    background: #4A90E2;
     color: white;
 }
 
 .otpResendBtn:disabled {
-    background: rgba(21, 120, 150, 0.698);
+    background: #96c4f9;
     cursor: not-allowed;
 }
 
