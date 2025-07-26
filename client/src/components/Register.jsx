@@ -34,7 +34,7 @@ export default function Register() {
             return;
         }
 
-console.log(formData);
+        console.log(formData);
 
 
         try {
@@ -50,8 +50,17 @@ console.log(formData);
                 // Save user data to localStorage
                 localStorage.setItem("user", JSON.stringify(data.user));
 
-                toast.success("Registered successfully!");
-                setTimeout(() => navigate("/success"), 3000);
+                localStorage.setItem("isRegistered", "true");
+
+
+                toast.success("Registered successfully!", {
+                    autoClose: 2000,
+                });
+
+                setTimeout(() => {
+                    navigate("/success");
+                }, 2200); // Slightly after the toast auto closes
+
             }
         } catch (err) {
             console.error("Error during registration:", err);

@@ -1,11 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./LoginSuccess.css";
 
 export default function RegistrationSuccess() {
     const navigate = useNavigate();
 
-    const handleGoToLogin = () => {
+    useEffect(() => {
+        const isRegistered = localStorage.getItem("isRegistered");
+
+        if (!isRegistered) {
+            navigate("/register");
+        }
+        // ⛔ Do NOT remove it immediately here
+    }, [navigate]);
+
+    const handleGoToProfile = () => {
+        // ✅ Now remove the flag only after button click
+        localStorage.removeItem("isRegistered");
         navigate("/profile");
     };
 
@@ -14,7 +25,7 @@ export default function RegistrationSuccess() {
             <div className="success-card">
                 <h1>Registration Successful! 🎉</h1>
                 <p>Your account has been created successfully.</p>
-                <button onClick={handleGoToLogin}>Go to Profile</button>
+                <button onClick={handleGoToProfile}>Go to Profile</button>
             </div>
         </div>
     );
